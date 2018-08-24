@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,800');
+
+@mixin font-light() {
+    font-weight: 300;
+}
+
+@mixin font-bold() {
+    font-weight: 700;
+}
+
+@mixin font-extrabold() {
+    font-weight: 800;
+}

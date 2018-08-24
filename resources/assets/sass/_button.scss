@@ -1,0 +1,35 @@
+.button.button--open-modal {
+    @include font-bold();
+    padding: 15px 25px;
+    color: black;
+    font-size: 22px;
+    border-radius: 32.5px;
+    background-color: #ffffff;
+    outline: none;
+    border: 0;
+    box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+    .icon{
+        width: 21px;
+        height: 21px;
+        margin-right: 10px;
+        opacity: 1;
+        transform: translateY(-1px) scale(1,1);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    &:active, &:focus{
+        outline: none;
+        box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0);
+        transition: box-shadow 0.2s ease;
+        .icon{
+            opacity: 0;
+            transform: translateY(-1px) scale(2,2);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+    }
+}
+
+.button.button--start-meeting {
+    position: relative;
+    z-index: 10;
+}

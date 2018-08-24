@@ -1,0 +1,11 @@
+<?php
+
+return [
+
+     /*
+     *  The ids of the Google Calendar rooms.
+     */
+    'rooms' => [
+        'room_name' => 'room_id'
+    ],
+];

@@ -1,0 +1,47 @@
+.roomselector{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.roomselection{
+    position: relative;
+    text-align: center;
+    padding: 110px 0;
+    border-radius: 10px;
+    background: white;
+    width: 697px;
+    z-index: 5;
+    max-height: 100vh;
+    overflow-y: auto;
+    h3{
+        font-size: 20px;
+        margin: 0 0 40px 0;
+        @include font-extrabold();
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        margin-bottom: 15px;
+        min-width: 205px;
+    }
+}
+
+.roomselector__shape-topleft{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.roomselector__shape-bottomright{
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+}
